@@ -5,7 +5,6 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/local-state">local state</router-link> |
       <router-link to="/shared-state">shared state</router-link> |
-      <router-link to="/global-event-bus">global event bus</router-link> |
       <router-link to="/vuex">vuex flux pattern</router-link>
     </div>
   </div>

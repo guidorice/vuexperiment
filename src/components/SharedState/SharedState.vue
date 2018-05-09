@@ -1,9 +1,9 @@
-// SharedState component:
+// SharedState/GlobalEvent bus component:
 // example of hello my name is ..., using a shared state (single source of truth)
 
 <template>
   <div class="hello">
-    <h1>Shared State</h1>
+    <h1>Shared State / Global Event Bus</h1>
       <greeter :name="state.model.name"  :onChange="changeName">
       </greeter>
       <greeter :name="state.model.name" :onChange="changeName">

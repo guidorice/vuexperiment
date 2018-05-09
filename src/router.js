@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import LocalState from './components/LocalState';
 import SharedState from './components/SharedState/SharedState';
-import GlobalEventBus from './components/GlobalEventBus/GlobalEventBus';
 import Vuex from './components/Vuex/Vuex';
 
 
@@ -25,11 +24,6 @@ export default new Router({
       path: '/shared-state',
       name: 'shared state',
       component: SharedState
-    },
-    {
-      path: '/global-event-bus',
-      name: 'global event bus',
-      component: GlobalEventBus
     },
     {
       path: '/vuex',

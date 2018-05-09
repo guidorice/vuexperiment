@@ -15,7 +15,7 @@
 
 <script>
     export default {
-        name: "Greeter",
+        name: "SharedState-Greeter",
         props: [ 'name', 'onChange' ],
         methods: {
             onInput(name) {
