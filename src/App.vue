@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <div id="nav">
+      <router-view/>
+      <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/local-state">local state</router-link> |
+      <router-link to="/shared-state">shared state</router-link> |
+      <router-link to="/global-event-bus">global event bus</router-link> |
+      <router-link to="/vuex">vuex flux pattern</router-link>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -13,7 +16,7 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  margin: 2rem;
   color: #2c3e50;
 }
 #nav {
