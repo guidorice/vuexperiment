@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+      <a href="https://github.com/guidorice/vuexperiment"><img
+              style="position: absolute;
+      top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
       <router-view/>
       <div id="nav">
       <router-link to="/">Home</router-link> |
