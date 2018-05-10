@@ -1,20 +1,48 @@
+// Vue example component:
+// example of hello my name is ..., using vuex flux pattern library
+
+// the vuex store is available in this.$store because of awesome scaffolding
+// done by the vue cli-tools. see ../store.js
+
 <template>
   <div class="hello">
-    <h1>Vuex Flux Pattern</h1>
-
+      <h1>Vuex Flux Pattern</h1>
+      <greeter
+              :name="name"
+              greeterName="Exaybachay. He Who Talks Loud, Saying Nothing."
+              :onChange="changeName"></greeter>
+      <greeter
+              :name="name"
+              greeterName="Exaybachay. He Who Talks Loud, Saying Nothing."
+              :onChange="changeName"></greeter>
+      <greeter
+              :name="name"
+              greeterName="Exaybachay. He Who Talks Loud, Saying Nothing."
+              :onChange="changeName"></greeter>
   </div>
 </template>
 
 <script>
+import Greeter from '../Greeter';
+
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+    name: 'VuexExample',
+    components: {
+        Greeter,
+    },
+    methods: {
+        changeName(name) {
+            this.$store.commit('changeName', name);
+        },
+    },
+    computed: {
+        name () {
+            return this.$store.state.name
+        }
+    }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 h3 {
   margin: 40px 0 0;

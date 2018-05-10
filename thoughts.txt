@@ -1,0 +1,20 @@
+In about 6 hours was able to...
+
+create new project with the vue cli tools
+
+install and explore the vue devtools extension in chrome
+
+configure the vue spa router
+
+create vue components managing state in different ways
+
+implement vuex flux-pattern library
+
+verify debugging with breakpoints, inspector, and sourcemap works correctly.
+
+the cli tools seem production-ready, they include presets for variety of
+bundling options, development server, unit testing and e2e testing.
+
+documentation is awesome
+
+couldn't be happier with vue js framework

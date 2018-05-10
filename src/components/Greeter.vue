@@ -8,21 +8,21 @@
                placeholder="enter your name">
         <p v-if="name">
             Hi <b>{{ name }}</b>.
-            My name is Exaybachay. He Who Talks Loud, Saying Nothing.
+            My name is {{ greeterName }}
         </p>
     </div>
 </template>
 
 <script>
     export default {
-        name: "SharedState-Greeter",
-        props: [ 'name', 'onChange' ],
+        name: "Greeter",
+        props: [ 'name', 'greeterName', 'onChange' ],
         methods: {
             onInput(name) {
                 // TODO: debounce, capitalize, whatever
                 this.onChange(name);
             }
-        }
+        },
     }
 </script>
 

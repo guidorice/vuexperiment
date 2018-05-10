@@ -4,15 +4,19 @@
 <template>
   <div class="hello">
     <h1>Shared State / Global Event Bus</h1>
-      <greeter :name="state.model.name"  :onChange="changeName">
+      <greeter :name="state.model.name"
+        greeterName="Exaybachay"
+        :onChange="changeName">
       </greeter>
-      <greeter :name="state.model.name" :onChange="changeName">
+      <greeter :name="state.model.name"
+        greeterName="Exaybachay"
+        :onChange="changeName">
       </greeter>
   </div>
 </template>
 
 <script>
-import Greeter from './Greeter';
+import Greeter from '../Greeter';
 
 const state = {
     model: { name: '' },

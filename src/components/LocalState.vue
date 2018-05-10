@@ -8,7 +8,7 @@
         placeholder="enter your name">
       <p v-if="name">
         Good to meet you <b>{{ name }}</b>.
-        My name is Exaybachay. He Who Talks Loud, Saying Nothing.
+        My name is Nobody.
       </p>
   </div>
 </template>

@@ -3,8 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import LocalState from './components/LocalState';
 import SharedState from './components/SharedState/SharedState';
-import Vuex from './components/Vuex/Vuex';
-
+import VuexExample from './components/Vuex/Vuex';
 
 Vue.use(Router);
 
@@ -13,22 +12,22 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
     },
     {
       path: '/local-state',
       name: 'local state',
-      component: LocalState
+      component: LocalState,
     },
     {
       path: '/shared-state',
       name: 'shared state',
-      component: SharedState
+      component: SharedState,
     },
     {
       path: '/vuex',
       name: 'vuex flux pattern',
-      component: Vuex
+      component: VuexExample,
     },
   ]
 })
